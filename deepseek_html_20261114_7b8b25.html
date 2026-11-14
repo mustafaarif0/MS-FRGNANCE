@@ -1,0 +1,1904 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ===== SEO META TAGS ===== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="description" content="MS Fragrance - Shop premium luxury perfumes & long-lasting fragrances for men and women. Authentic designer scents, free shipping & best prices in Pakistan.">
+    <meta name="keywords" content="MS Fragrance, perfume, luxury perfume, buy perfume online, fragrance, eau de parfum, men perfume, women perfume, designer perfume Pakistan">
+    <meta name="author" content="MS Fragrance">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0f0a14">
+    <meta name="format-detection" content="telephone=no">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="MS Fragrance | Premium Luxury Perfumes">
+    <meta property="og:description" content="Discover premium luxury perfumes at MS Fragrance. Long-lasting fragrances for men & women with free shipping.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://msfragrance.com">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1541643600914-78b084683601?w=1200">
+    <meta property="og:site_name" content="MS Fragrance">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MS Fragrance | Premium Luxury Perfumes">
+    <meta name="twitter:description" content="Shop authentic luxury fragrances for men and women at MS Fragrance.">
+    
+    <link rel="canonical" href="https://msfragrance.com">
+    
+    <title>MS Fragrance | Premium Luxury Perfumes & Fragrances Online</title>
+    
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💐</text></svg>">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Store",
+      "name": "MS Fragrance",
+      "description": "Premium luxury perfumes and fragrances store",
+      "url": "https://msfragrance.com",
+      "telephone": "+92-300-1234567",
+      "email": "info@msfragrance.com",
+      "address": { "@type": "PostalAddress", "addressCountry": "PK" },
+      "sameAs": ["https://facebook.com/msfragrance", "https://instagram.com/msfragrance"]
+    }
+    </script>
+
+    <style>
+        /* ============================================
+           CSS - DARK LUXURY THEME (FULLY RESPONSIVE)
+           ============================================ */
+        * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+        
+        :root {
+            --bg-dark: #0f0a14;
+            --bg-card: #1a1122;
+            --bg-card-2: #221733;
+            --primary: #d4a574;
+            --accent: #c77dff;
+            --accent-glow: rgba(199, 125, 255, 0.4);
+            --gold: #d4a574;
+            --text-light: #f5f0fa;
+            --text-muted: #a89bb8;
+            --border: rgba(212, 165, 116, 0.15);
+            --grad: linear-gradient(135deg, #d4a574 0%, #c77dff 100%);
+            --success: #4ade80;
+            --danger: #f87171;
+        }
+        
+        html { 
+            scroll-behavior: smooth; 
+            scroll-padding-top: 75px;
+            -webkit-text-size-adjust: 100%;
+        }
+        
+        body {
+            font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            background: var(--bg-dark);
+            color: var(--text-light);
+            line-height: 1.6;
+            overflow-x: hidden;
+            min-height: 100vh;
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        body.menu-open { overflow: hidden; }
+        
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            background: 
+                radial-gradient(circle at 15% 15%, rgba(199, 125, 255, 0.12), transparent 40%),
+                radial-gradient(circle at 85% 80%, rgba(212, 165, 116, 0.1), transparent 40%),
+                radial-gradient(circle at 50% 50%, rgba(120, 50, 180, 0.05), transparent 60%);
+            z-index: -1;
+            pointer-events: none;
+        }
+        
+        img { max-width: 100%; display: block; height: auto; }
+        a { text-decoration: none; }
+        button { font-family: inherit; }
+
+        /* ===== TOP BAR ===== */
+        .topbar {
+            background: linear-gradient(90deg, #1a1122, #2a1a3a, #1a1122);
+            color: var(--gold);
+            text-align: center;
+            padding: 0.5rem 1rem;
+            font-size: 0.78rem;
+            letter-spacing: 0.5px;
+            border-bottom: 1px solid var(--border);
+            line-height: 1.4;
+        }
+
+        /* ===== NAVBAR ===== */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.9rem 5%;
+            background: rgba(15, 10, 20, 0.95);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid var(--border);
+            transition: box-shadow 0.3s;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            background: var(--grad);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: 0.5px;
+            line-height: 1.1;
+            flex-shrink: 0;
+        }
+        
+        .logo span { 
+            font-size: 0.55rem; 
+            display: block; 
+            letter-spacing: 2.5px; 
+            font-weight: 500; 
+            -webkit-text-fill-color: var(--text-muted); 
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            align-items: center;
+        }
+        
+        .nav-links a {
+            color: var(--text-light);
+            font-weight: 500;
+            font-size: 0.92rem;
+            transition: color 0.3s;
+            position: relative;
+            padding: 0.3rem 0;
+        }
+        
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0; left: 0;
+            width: 0; height: 2px;
+            background: var(--grad);
+            transition: width 0.3s;
+        }
+        
+        .nav-links a:hover, .nav-links a.active { color: var(--gold); }
+        .nav-links a:hover::after, .nav-links a.active::after { width: 100%; }
+        
+        .nav-cta {
+            padding: 0.5rem 1.2rem;
+            background: var(--grad);
+            color: #0f0a14 !important;
+            border-radius: 50px;
+            font-weight: 700;
+            box-shadow: 0 4px 20px var(--accent-glow);
+            transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
+            font-size: 0.88rem;
+        }
+        
+        .nav-cta:hover { transform: translateY(-2px); box-shadow: 0 6px 28px var(--accent-glow); }
+        .nav-cta::after { display: none !important; }
+        
+        .cart-count {
+            background: #0f0a14;
+            color: var(--gold);
+            font-size: 0.65rem;
+            border-radius: 50%;
+            padding: 0.1rem 0.4rem;
+            margin-left: 0.3rem;
+            font-weight: 800;
+            display: inline-block;
+        }
+        
+        /* Mobile menu toggle */
+        .menu-toggle {
+            display: none;
+            font-size: 1.6rem;
+            cursor: pointer;
+            color: var(--gold);
+            background: transparent;
+            border: none;
+            padding: 0.3rem;
+            z-index: 1100;
+            line-height: 1;
+        }
+        
+        /* Mobile menu overlay */
+        .menu-overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.6);
+            z-index: 998;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        
+        .menu-overlay.active { opacity: 1; }
+
+        /* ===== HERO ===== */
+        .hero {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 3rem;
+            padding: 4rem 5% 3rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .hero-content h1 {
+            font-size: clamp(1.8rem, 5vw, 3.4rem);
+            line-height: 1.15;
+            margin-bottom: 1.2rem;
+            color: var(--text-light);
+        }
+        
+        .hero-content h1 .gradient-text {
+            background: var(--grad);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .hero-content p {
+            font-size: clamp(0.95rem, 2vw, 1.1rem);
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+            max-width: 480px;
+        }
+        
+        .hero-buttons { display: flex; gap: 1rem; flex-wrap: wrap; }
+        
+        .btn-primary, .btn-outline {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.85rem 2rem;
+            border-radius: 50px;
+            font-weight: 700;
+            cursor: pointer;
+            font-size: 0.95rem;
+            transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+            border: none;
+            min-height: 48px;
+            text-align: center;
+        }
+        
+        .btn-primary {
+            background: var(--grad);
+            color: #0f0a14;
+            box-shadow: 0 8px 25px var(--accent-glow);
+        }
+        
+        .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 12px 35px var(--accent-glow); }
+        
+        .btn-outline {
+            border: 2px solid var(--gold);
+            color: var(--gold);
+            background: transparent;
+        }
+        
+        .btn-outline:hover { background: var(--gold); color: #0f0a14; }
+        
+        .hero-visual {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-width: 0;
+        }
+        
+        .hero-img-wrap {
+            width: 100%;
+            max-width: 380px;
+            aspect-ratio: 380/460;
+            border-radius: 30px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 30px 80px rgba(199, 125, 255, 0.3);
+            border: 1px solid var(--border);
+        }
+        
+        .hero-img-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s;
+        }
+        
+        .hero-img-wrap:hover img { transform: scale(1.06); }
+        
+        .hero-img-wrap::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, transparent 50%, rgba(15,10,20,0.85) 100%);
+            pointer-events: none;
+        }
+        
+        .hero-img-label {
+            position: absolute;
+            bottom: 18px;
+            left: 0; right: 0;
+            text-align: center;
+            z-index: 2;
+            color: var(--gold);
+            font-weight: 700;
+            letter-spacing: 3px;
+            font-size: 0.8rem;
+        }
+        
+        .floating-badge {
+            position: absolute;
+            background: rgba(26, 17, 34, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--border);
+            padding: 0.6rem 1rem;
+            border-radius: 50px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            font-size: 0.78rem;
+            font-weight: 600;
+            color: var(--gold);
+            animation: float 3s ease-in-out infinite;
+            z-index: 3;
+            white-space: nowrap;
+        }
+        
+        .badge-1 { top: 20px; right: 0; }
+        .badge-2 { bottom: 50px; left: 0; animation-delay: 1.5s; }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        /* ===== SECTION HEADERS ===== */
+        .section-pad { padding: 4rem 5%; }
+        
+        .section-head { text-align: center; margin-bottom: 2.5rem; }
+        
+        .section-tag {
+            display: inline-block;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 0.8rem;
+        }
+        
+        .section-head h2 {
+            font-size: clamp(1.6rem, 4vw, 2.5rem);
+            color: var(--text-light);
+            margin-bottom: 0.6rem;
+            line-height: 1.2;
+        }
+        
+        .section-head p { 
+            color: var(--text-muted); 
+            max-width: 600px; 
+            margin: 0 auto; 
+            font-size: clamp(0.9rem, 2vw, 1rem);
+        }
+
+        /* ===== BRANDS STRIP ===== */
+        .brands-wrap { padding: 0 5%; }
+        
+        .brands {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            padding: 1.2rem 2rem;
+            background: rgba(26, 17, 34, 0.6);
+            backdrop-filter: blur(8px);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            max-width: 1100px;
+            margin: 0 auto;
+            font-weight: 700;
+            color: var(--text-muted);
+            font-size: clamp(0.8rem, 2.5vw, 1.1rem);
+            letter-spacing: 1.5px;
+        }
+        
+        .brands span { opacity: 0.6; transition: opacity 0.3s, color 0.3s; }
+        .brands span:hover { opacity: 1; color: var(--gold); }
+
+        /* ===== PRODUCT FILTERS ===== */
+        .filters {
+            display: flex;
+            justify-content: center;
+            gap: 0.6rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+            padding: 0 5%;
+        }
+        
+        .filter-btn {
+            padding: 0.55rem 1.3rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            color: var(--text-muted);
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.85rem;
+            transition: all 0.3s;
+            min-height: 44px;
+            touch-action: manipulation;
+        }
+        
+        .filter-btn:hover { border-color: var(--gold); color: var(--gold); }
+        .filter-btn.active {
+            background: var(--grad);
+            color: #0f0a14;
+            border-color: transparent;
+            box-shadow: 0 4px 15px var(--accent-glow);
+        }
+
+        /* ===== PRODUCTS ===== */
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1.5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 5%;
+        }
+        
+        .product-card {
+            background: var(--bg-card);
+            border-radius: 20px;
+            padding: 1rem;
+            text-align: center;
+            transition: transform 0.35s, box-shadow 0.35s, border-color 0.35s;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+            border: 1px solid var(--border);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .product-card.hide { display: none; }
+        
+        .product-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 50px rgba(199, 125, 255, 0.25);
+            border-color: rgba(212, 165, 116, 0.5);
+        }
+        
+        .product-badge {
+            position: absolute;
+            top: 14px;
+            right: 14px;
+            background: var(--grad);
+            color: #0f0a14;
+            font-size: 0.6rem;
+            font-weight: 800;
+            padding: 0.25rem 0.7rem;
+            border-radius: 50px;
+            letter-spacing: 0.8px;
+            z-index: 2;
+        }
+        
+        .product-img-wrap {
+            background: var(--bg-card-2);
+            border-radius: 14px;
+            overflow: hidden;
+            margin-bottom: 1rem;
+            position: relative;
+            aspect-ratio: 1/1;
+        }
+        
+        .product-img-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+        
+        .product-card:hover .product-img-wrap img { transform: scale(1.1); }
+        
+        .product-img-wrap::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, transparent 60%, rgba(15, 10, 20, 0.7) 100%);
+            pointer-events: none;
+        }
+        
+        .product-card h3 {
+            font-size: 1.05rem;
+            color: var(--text-light);
+            margin-bottom: 0.3rem;
+        }
+        
+        .product-notes {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            font-style: italic;
+            margin-bottom: 0.7rem;
+        }
+        
+        .product-rating { color: var(--gold); font-size: 0.8rem; margin-bottom: 0.7rem; }
+        
+        .product-price {
+            font-size: 1.3rem;
+            font-weight: 800;
+            background: var(--grad);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 0.9rem;
+        }
+        
+        .product-price del { 
+            font-size: 0.85rem; 
+            color: var(--text-muted); 
+            font-weight: 400; 
+            -webkit-text-fill-color: var(--text-muted); 
+            margin-left: 0.4rem; 
+        }
+        
+        .add-cart-btn {
+            width: 100%;
+            padding: 0.7rem;
+            border: none;
+            background: var(--grad);
+            color: #0f0a14;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 0.88rem;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+            min-height: 44px;
+            touch-action: manipulation;
+            margin-top: auto;
+        }
+        
+        .add-cart-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 22px var(--accent-glow);
+        }
+        
+        .add-cart-btn.added {
+            background: var(--success);
+            color: #0f0a14;
+        }
+
+        /* ===== SERVICES ===== */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1.5rem;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 5%;
+        }
+        
+        .service-card {
+            background: var(--bg-card);
+            border-radius: 18px;
+            padding: 1.8rem 1.3rem;
+            text-align: center;
+            border: 1px solid var(--border);
+            transition: transform 0.3s, border-color 0.3s;
+        }
+        
+        .service-card:hover { transform: translateY(-6px); border-color: rgba(212, 165, 116, 0.5); }
+        
+        .service-icon { font-size: 2.6rem; margin-bottom: 0.8rem; display: block; }
+        .service-card h3 { color: var(--text-light); margin-bottom: 0.5rem; font-size: 1.05rem; }
+        .service-card p { color: var(--text-muted); font-size: 0.88rem; }
+
+        /* ===== ABOUT ===== */
+        .about-wrap {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2.5rem;
+            align-items: center;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 5%;
+        }
+        
+        .about-visual {
+            border-radius: 24px;
+            overflow: hidden;
+            position: relative;
+            aspect-ratio: 1/1;
+            max-height: 420px;
+            box-shadow: 0 20px 60px rgba(199, 125, 255, 0.25);
+            border: 1px solid var(--border);
+        }
+        
+        .about-visual img { width: 100%; height: 100%; object-fit: cover; }
+        
+        .about-visual::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, transparent 50%, rgba(15,10,20,0.9) 100%);
+        }
+        
+        .about-visual-text {
+            position: absolute;
+            bottom: 22px;
+            left: 0; right: 0;
+            text-align: center;
+            z-index: 2;
+        }
+        
+        .about-visual-text h3 { color: var(--gold); font-size: 1.3rem; letter-spacing: 2.5px; }
+        .about-visual-text p { color: var(--text-muted); font-size: 0.82rem; }
+        
+        .about-text h2 { font-size: clamp(1.5rem, 4vw, 2.2rem); color: var(--text-light); margin-bottom: 1rem; }
+        .about-text p { color: var(--text-muted); margin-bottom: 1rem; font-size: 0.95rem; }
+        
+        .about-list { list-style: none; margin-top: 1.2rem; }
+        .about-list li {
+            padding: 0.4rem 0;
+            color: var(--text-light);
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 0.7rem;
+            font-size: 0.92rem;
+        }
+        .about-list li::before {
+            content: '✓';
+            background: var(--grad);
+            color: #0f0a14;
+            width: 22px; height: 22px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.72rem;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+        
+        /* Stats */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 1rem;
+            max-width: 900px;
+            margin: 2.5rem auto 0;
+            padding: 0 5%;
+        }
+        
+        .stat-box {
+            text-align: center;
+            padding: 1.3rem 0.8rem;
+            background: var(--bg-card);
+            border-radius: 14px;
+            border: 1px solid var(--border);
+        }
+        
+        .stat-number {
+            font-size: clamp(1.6rem, 4vw, 2.2rem);
+            font-weight: 800;
+            background: var(--grad);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .stat-label { color: var(--text-muted); font-size: 0.8rem; }
+
+        /* ===== TESTIMONIALS ===== */
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+            gap: 1.5rem;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 5%;
+        }
+        
+        .testimonial {
+            background: var(--bg-card);
+            padding: 1.8rem 1.5rem;
+            border-radius: 18px;
+            border: 1px solid var(--border);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+            transition: border-color 0.3s;
+        }
+        
+        .testimonial:hover { border-color: rgba(212, 165, 116, 0.4); }
+        
+        .testimonial .stars { color: var(--gold); margin-bottom: 0.9rem; font-size: 0.9rem; }
+        .testimonial p { color: var(--text-muted); font-size: 0.9rem; font-style: italic; margin-bottom: 1.1rem; line-height: 1.7; }
+        
+        .testimonial-author { display: flex; align-items: center; gap: 0.7rem; }
+        
+        .author-avatar {
+            width: 40px; height: 40px;
+            border-radius: 50%;
+            background: var(--grad);
+            color: #0f0a14;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            flex-shrink: 0;
+        }
+        
+        .author-info strong { display: block; color: var(--text-light); font-size: 0.9rem; }
+        .author-info span { color: var(--text-muted); font-size: 0.78rem; }
+
+        /* ===== CONTACT ===== */
+        .contact-wrap {
+            display: grid;
+            grid-template-columns: 1fr 1.3fr;
+            gap: 2rem;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 5%;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        
+        .contact-card {
+            display: flex;
+            gap: 0.9rem;
+            align-items: flex-start;
+            background: var(--bg-card);
+            padding: 1.2rem;
+            border-radius: 14px;
+            border: 1px solid var(--border);
+            transition: border-color 0.3s;
+        }
+        
+        .contact-card:hover { border-color: rgba(212, 165, 116, 0.5); }
+        
+        .contact-card .icon {
+            font-size: 1.5rem;
+            width: 44px;
+            height: 44px;
+            background: var(--bg-card-2);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        
+        .contact-card h4 { color: var(--text-light); margin-bottom: 0.15rem; font-size: 0.95rem; }
+        .contact-card p, .contact-card a { color: var(--text-muted); font-size: 0.85rem; word-break: break-word; }
+        .contact-card a:hover { color: var(--gold); }
+        
+        .contact-form {
+            background: var(--bg-card);
+            padding: 1.8rem;
+            border-radius: 18px;
+            border: 1px solid var(--border);
+        }
+        
+        .form-group { margin-bottom: 1rem; }
+        
+        .form-group label {
+            display: block;
+            font-size: 0.82rem;
+            color: var(--text-muted);
+            margin-bottom: 0.35rem;
+            font-weight: 600;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            background: var(--bg-dark);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            color: var(--text-light);
+            font-family: inherit;
+            font-size: 16px; /* Prevents iOS zoom */
+            outline: none;
+            transition: border-color 0.3s;
+            min-height: 48px;
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus { border-color: var(--gold); }
+        
+        .form-group textarea { resize: vertical; min-height: 110px; }
+        
+        .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+        
+        .form-message {
+            margin-top: 1rem;
+            padding: 0.75rem 1rem;
+            border-radius: 10px;
+            font-size: 0.88rem;
+            display: none;
+        }
+        
+        .form-message.success,
+        .form-message.error {
+            display: block;
+        }
+        
+        .form-message.success {
+            background: rgba(74, 222, 128, 0.15);
+            border: 1px solid var(--success);
+            color: var(--success);
+        }
+        
+        .form-message.error {
+            background: rgba(248, 113, 113, 0.15);
+            border: 1px solid var(--danger);
+            color: var(--danger);
+        }
+
+        /* ===== NEWSLETTER ===== */
+        .newsletter {
+            background: linear-gradient(135deg, #221733 0%, #2a1a3a 100%);
+            border: 1px solid var(--border);
+            border-radius: 24px;
+            padding: 2.8rem 1.5rem;
+            text-align: center;
+            max-width: 1000px;
+            margin: 0 auto;
+            box-shadow: 0 20px 60px rgba(199, 125, 255, 0.15);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .newsletter::before {
+            content: '';
+            position: absolute;
+            top: -50%; left: -50%;
+            width: 200%; height: 200%;
+            background: radial-gradient(circle, rgba(212, 165, 116, 0.08), transparent 50%);
+            pointer-events: none;
+        }
+        
+        .newsletter h2 { 
+            font-size: clamp(1.3rem, 3.5vw, 2rem); 
+            margin-bottom: 0.6rem; 
+            color: var(--gold); 
+            position: relative; 
+        }
+        .newsletter p { color: var(--text-muted); margin-bottom: 1.5rem; position: relative; font-size: 0.92rem; }
+        
+        .newsletter-form {
+            display: flex;
+            gap: 0.7rem;
+            max-width: 500px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+            justify-content: center;
+            position: relative;
+        }
+        
+        .newsletter-form input {
+            flex: 1;
+            min-width: 200px;
+            padding: 0.85rem 1.3rem;
+            border: 1px solid var(--border);
+            background: var(--bg-dark);
+            color: var(--text-light);
+            border-radius: 50px;
+            font-size: 16px;
+            font-family: inherit;
+            outline: none;
+            transition: border-color 0.3s;
+            min-height: 48px;
+        }
+        
+        .newsletter-form input:focus { border-color: var(--gold); }
+        
+        .newsletter-form button {
+            padding: 0.85rem 1.8rem;
+            border: none;
+            background: var(--grad);
+            color: #0f0a14;
+            border-radius: 50px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+            font-size: 0.92rem;
+            min-height: 48px;
+            touch-action: manipulation;
+        }
+        
+        .newsletter-form button:hover { transform: translateY(-2px); box-shadow: 0 8px 25px var(--accent-glow); }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background: #0a0610;
+            color: var(--text-muted);
+            padding: 2.8rem 5% 1.3rem;
+            margin-top: 4rem;
+            border-top: 1px solid var(--border);
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto 2rem;
+        }
+        
+        .footer-brand .logo { margin-bottom: 0.8rem; }
+        .footer-brand p { font-size: 0.85rem; opacity: 0.8; max-width: 280px; margin-bottom: 1rem; }
+        
+        .social-links { display: flex; gap: 0.6rem; }
+        .social-links a {
+            width: 36px; height: 36px;
+            background: rgba(212, 165, 116, 0.1);
+            border: 1px solid var(--border);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gold);
+            transition: background 0.3s, transform 0.3s;
+            font-size: 0.8rem;
+        }
+        .social-links a:hover { background: var(--gold); color: #0f0a14; transform: translateY(-3px); }
+        
+        .footer-col h4 { color: var(--text-light); font-size: 0.92rem; margin-bottom: 1rem; letter-spacing: 1px; }
+        .footer-col ul { list-style: none; }
+        .footer-col ul li { margin-bottom: 0.6rem; }
+        .footer-col ul a { color: var(--text-muted); font-size: 0.85rem; transition: color 0.3s; }
+        .footer-col ul a:hover { color: var(--gold); }
+        
+        .footer-bottom {
+            border-top: 1px solid var(--border);
+            padding-top: 1.3rem;
+            text-align: center;
+            font-size: 0.8rem;
+            opacity: 0.7;
+            max-width: 1200px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        /* ===== TOAST ===== */
+        .toast {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            left: 20px;
+            max-width: 380px;
+            margin-left: auto;
+            background: var(--bg-card-2);
+            color: var(--text-light);
+            padding: 0.9rem 1.2rem;
+            border-radius: 12px;
+            border: 1px solid var(--gold);
+            box-shadow: 0 10px 40px rgba(199, 125, 255, 0.4);
+            transform: translateY(200%);
+            transition: transform 0.4s ease;
+            z-index: 2000;
+            font-size: 0.88rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+        }
+        
+        .toast.show { transform: translateY(0); }
+
+        /* ===== SCROLL REVEAL ===== */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.7s ease, transform 0.7s ease;
+        }
+        
+        .reveal.visible { opacity: 1; transform: translateY(0); }
+
+        /* ============================================
+           RESPONSIVE BREAKPOINTS
+           ============================================ */
+        
+        /* --- TABLET (max 992px) --- */
+        @media (max-width: 992px) {
+            .hero {
+                grid-template-columns: 1fr;
+                text-align: center;
+                padding: 2.5rem 5% 2rem;
+                gap: 2rem;
+            }
+            .hero-content p { margin-left: auto; margin-right: auto; }
+            .hero-buttons { justify-content: center; }
+            .hero-visual { margin-top: 0.5rem; }
+            .about-wrap { grid-template-columns: 1fr; gap: 2rem; }
+            .about-visual { max-width: 400px; margin: 0 auto; width: 100%; }
+            .contact-wrap { grid-template-columns: 1fr; }
+            .footer-grid { grid-template-columns: 1fr 1fr; }
+        }
+        
+        /* --- MOBILE (max 768px) --- */
+        @media (max-width: 768px) {
+            html { scroll-padding-top: 65px; }
+            
+            nav { padding: 0.75rem 5%; }
+            
+            .logo { font-size: 1.25rem; }
+            .logo span { font-size: 0.5rem; letter-spacing: 2px; }
+            
+            /* Mobile menu - slide from right */
+            .menu-toggle { 
+                display: block; 
+                order: 3;
+                margin-left: auto;
+            }
+            
+            .nav-links {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                height: 100vh;
+                width: 75%;
+                max-width: 320px;
+                background: #1a1122;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 5rem 2rem 2rem;
+                gap: 0;
+                transition: right 0.4s ease;
+                box-shadow: -10px 0 40px rgba(0,0,0,0.6);
+                border-left: 1px solid var(--border);
+                z-index: 999;
+                overflow-y: auto;
+            }
+            
+            .nav-links.active { right: 0; }
+            
+            .nav-links li {
+                width: 100%;
+                border-bottom: 1px solid var(--border);
+            }
+            
+            .nav-links li:last-child {
+                border-bottom: none;
+                margin-top: 1.5rem;
+            }
+            
+            .nav-links a {
+                display: block;
+                padding: 1rem 0;
+                font-size: 1rem;
+                width: 100%;
+            }
+            
+            .nav-links a::after { display: none; }
+            
+            .nav-links a.active { color: var(--gold); }
+            
+            .nav-cta {
+                display: block !important;
+                text-align: center;
+                padding: 0.9rem 1.5rem;
+                font-size: 0.95rem;
+                width: 100%;
+            }
+            
+            .menu-overlay { display: block; pointer-events: none; }
+            .menu-overlay.active { pointer-events: auto; }
+            
+            /* Sections spacing */
+            .section-pad { padding: 3rem 5%; }
+            .section-head { margin-bottom: 2rem; }
+            
+            /* Products - 2 columns on mobile */
+            .products-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 0.9rem;
+            }
+            
+            .product-card { padding: 0.7rem; border-radius: 14px; }
+            .product-card h3 { font-size: 0.85rem; }
+            .product-notes { font-size: 0.7rem; margin-bottom: 0.5rem; }
+            .product-rating { font-size: 0.7rem; margin-bottom: 0.5rem; }
+            .product-price { font-size: 1rem; margin-bottom: 0.6rem; }
+            .product-price del { font-size: 0.72rem; }
+            .add-cart-btn { font-size: 0.78rem; padding: 0.55rem; min-height: 40px; }
+            .product-badge { font-size: 0.5rem; padding: 0.2rem 0.5rem; top: 10px; right: 10px; }
+            .product-img-wrap { border-radius: 10px; margin-bottom: 0.6rem; }
+            
+            /* Services */
+            .services-grid { grid-template-columns: repeat(2, 1fr); gap: 0.9rem; }
+            .service-card { padding: 1.2rem 0.8rem; border-radius: 14px; }
+            .service-icon { font-size: 2rem; margin-bottom: 0.5rem; }
+            .service-card h3 { font-size: 0.85rem; }
+            .service-card p { font-size: 0.75rem; }
+            
+            /* Stats */
+            .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 0.8rem; }
+            .stat-box { padding: 1rem 0.6rem; }
+            
+            /* Testimonials */
+            .testimonials-grid { grid-template-columns: 1fr; gap: 1rem; }
+            
+            /* Footer */
+            .footer-grid { grid-template-columns: 1fr; gap: 1.8rem; text-align: center; }
+            .footer-brand p { margin-left: auto; margin-right: auto; }
+            .social-links { justify-content: center; }
+            .footer-col h4 { margin-bottom: 0.7rem; }
+            
+            /* Contact */
+            .form-row { grid-template-columns: 1fr; gap: 0; }
+            .contact-form { padding: 1.3rem; }
+            
+            /* Toast */
+            .toast { bottom: 15px; right: 15px; left: 15px; font-size: 0.82rem; padding: 0.75rem 1rem; }
+            
+            /* Floating badges - hide on very small for clean look */
+            .floating-badge { font-size: 0.7rem; padding: 0.5rem 0.85rem; }
+        }
+        
+        /* --- SMALL MOBILE (max 480px) --- */
+        @media (max-width: 480px) {
+            .topbar { font-size: 0.7rem; padding: 0.4rem 0.5rem; }
+            
+            .hero { padding: 1.5rem 4% 1rem; }
+            .hero-content h1 { font-size: 1.6rem; }
+            .hero-content p { font-size: 0.9rem; }
+            
+            .hero-buttons { flex-direction: column; width: 100%; }
+            .hero-buttons a { width: 100%; }
+            
+            .brands { gap: 1rem; padding: 1rem; font-size: 0.75rem; }
+            
+            .filters { gap: 0.4rem; }
+            .filter-btn { padding: 0.45rem 0.9rem; font-size: 0.78rem; min-height: 40px; }
+            
+            .products-grid { gap: 0.7rem; }
+            .product-card { padding: 0.6rem; }
+            .product-card h3 { font-size: 0.78rem; }
+            .product-notes { font-size: 0.65rem; }
+            .product-rating { font-size: 0.65rem; }
+            .product-price { font-size: 0.92rem; }
+            .add-cart-btn { font-size: 0.72rem; padding: 0.5rem; min-height: 38px; }
+            
+            .services-grid { grid-template-columns: 1fr; }
+            .service-card { padding: 1.2rem; }
+            .service-icon { font-size: 2.2rem; }
+            
+            .stats-grid { grid-template-columns: repeat(2, 1fr); }
+            .stat-number { font-size: 1.4rem; }
+            .stat-label { font-size: 0.72rem; }
+            
+            .newsletter { padding: 2rem 1rem; }
+            .newsletter-form { flex-direction: column; }
+            .newsletter-form input,
+            .newsletter-form button { width: 100%; }
+            
+            .floating-badge.badge-1 { right: 5px; }
+            .floating-badge.badge-2 { left: 5px; }
+        }
+        
+        /* --- TOUCH DEVICE OPTIMIZATIONS --- */
+        @media (hover: none) and (pointer: coarse) {
+            .product-card:hover { transform: none; }
+            .service-card:hover { transform: none; }
+            .feature-box:hover { transform: none; }
+            .btn-primary:hover,
+            .btn-outline:hover,
+            .nav-cta:hover { transform: none; }
+        }
+        
+        /* --- REDUCED MOTION --- */
+        @media (prefers-reduced-motion: reduce) {
+            * { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+            html { scroll-behavior: auto; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="topbar">
+        ✨ Free Shipping Above Rs. 3,000 &nbsp;|&nbsp; 💯 100% Original Guaranteed
+    </div>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav>
+        <a href="#home" class="logo">MS FRAGRANCE<span>LUXURY SCENTS</span></a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#products" class="nav-link">Products</a></li>
+            <li><a href="#services" class="nav-link">Services</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+            <li><a href="#products" class="nav-cta">Shop Now <span class="cart-count" id="cartCount">0</span></a></li>
+        </ul>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+    </nav>
+
+    <!-- ==========================================
+         HOME SECTION
+         ========================================== -->
+    <header class="hero" id="home">
+        <div class="hero-content">
+            <h1>Find Your <span class="gradient-text">Signature Scent</span> With MS Fragrance</h1>
+            <p>Premium luxury perfumes crafted with the finest ingredients. Long-lasting fragrances that define your personality and elegance.</p>
+            <div class="hero-buttons">
+                <a href="#products" class="btn-primary">Shop Collection</a>
+                <a href="#about" class="btn-outline">Learn More</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="hero-img-wrap">
+                <img src="https://images.unsplash.com/photo-1541643600914-78b084683601?w=800&q=80" 
+                     alt="Luxury perfume bottle - MS Fragrance signature collection" loading="eager">
+                <div class="hero-img-label">SIGNATURE COLLECTION</div>
+            </div>
+            <div class="floating-badge badge-1">⭐ 4.9/5 Rating</div>
+            <div class="floating-badge badge-2">🔥 Best Seller</div>
+        </div>
+    </header>
+
+    <!-- Brands -->
+    <div class="brands-wrap">
+        <div class="brands">
+            <span>CHANEL</span>
+            <span>DIOR</span>
+            <span>GUCCI</span>
+            <span>VERSACE</span>
+            <span>TOM FORD</span>
+        </div>
+    </div>
+
+    <!-- ==========================================
+         ABOUT SECTION
+         ========================================== -->
+    <section class="section-pad" id="about">
+        <div class="section-head reveal">
+            <span class="section-tag">About Us</span>
+            <h2>Where Luxury Meets Elegance</h2>
+            <p>Discover the story behind MS Fragrance</p>
+        </div>
+        <div class="about-wrap">
+            <div class="about-visual reveal">
+                <img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=800&q=80" 
+                     alt="MS Fragrance luxury perfume collection display" loading="lazy">
+                <div class="about-visual-text">
+                    <h3>MS FRAGRANCE</h3>
+                    <p>Crafting memorable scents since 2020</p>
+                </div>
+            </div>
+            <div class="about-text reveal">
+                <h2>Our Story</h2>
+                <p>At MS Fragrance, we believe every scent tells a story. We curate the world's finest fragrances using premium ingredients sourced from around the globe.</p>
+                <p>Our mission is simple — to help you find a signature scent that reflects your unique personality and leaves a lasting impression.</p>
+                <ul class="about-list">
+                    <li>Premium imported ingredients</li>
+                    <li>Long-lasting 12+ hour fragrance</li>
+                    <li>Trusted by 10,000+ happy customers</li>
+                    <li>Cruelty-free & skin-safe formulas</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Stats -->
+        <div class="stats-grid reveal">
+            <div class="stat-box">
+                <div class="stat-number" data-target="10000">0</div>
+                <div class="stat-label">Happy Customers</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number" data-target="50">0</div>
+                <div class="stat-label">Luxury Scents</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number" data-target="98">0</div>
+                <div class="stat-label">% Satisfaction</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number" data-target="5">0</div>
+                <div class="stat-label">Years Experience</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         PRODUCTS SECTION
+         ========================================== -->
+    <section class="section-pad" id="products">
+        <div class="section-head reveal">
+            <span class="section-tag">Our Collection</span>
+            <h2>Best Selling Fragrances</h2>
+            <p>Handpicked luxury perfumes loved by our customers worldwide</p>
+        </div>
+
+        <!-- Filters -->
+        <div class="filters reveal">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="men">Men</button>
+            <button class="filter-btn" data-filter="women">Women</button>
+            <button class="filter-btn" data-filter="unisex">Unisex</button>
+        </div>
+
+        <div class="products-grid" id="productsGrid">
+            <article class="product-card" data-category="women">
+                <span class="product-badge">BEST SELLER</span>
+                <div class="product-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=500&q=80" 
+                         alt="Rose Élégance luxury perfume bottle" loading="lazy">
+                </div>
+                <h3>Rose Élégance</h3>
+                <p class="product-notes">Rose • Jasmine • Musk</p>
+                <div class="product-rating">★★★★★ (128)</div>
+                <div class="product-price">Rs. 4,500 <del>Rs. 5,500</del></div>
+                <button class="add-cart-btn" data-name="Rose Élégance">Add to Cart</button>
+            </article>
+
+            <article class="product-card" data-category="men">
+                <div class="product-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1523293182086-7651a899d37f?w=500&q=80" 
+                         alt="Midnight Oud premium perfume bottle" loading="lazy">
+                </div>
+                <h3>Midnight Oud</h3>
+                <p class="product-notes">Oud • Amber • Vanilla</p>
+                <div class="product-rating">★★★★★ (94)</div>
+                <div class="product-price">Rs. 6,200</div>
+                <button class="add-cart-btn" data-name="Midnight Oud">Add to Cart</button>
+            </article>
+
+            <article class="product-card" data-category="unisex">
+                <span class="product-badge">NEW</span>
+                <div class="product-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1587017539504-67cfbddac569?w=500&q=80" 
+                         alt="Citrus Breeze fresh perfume bottle" loading="lazy">
+                </div>
+                <h3>Citrus Breeze</h3>
+                <p class="product-notes">Lemon • Bergamot • Mint</p>
+                <div class="product-rating">★★★★☆ (67)</div>
+                <div class="product-price">Rs. 3,800</div>
+                <button class="add-cart-btn" data-name="Citrus Breeze">Add to Cart</button>
+            </article>
+
+            <article class="product-card" data-category="women">
+                <div class="product-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1594035910387-fea47794261f?w=500&q=80" 
+                         alt="Floral Dream elegant perfume bottle" loading="lazy">
+                </div>
+                <h3>Floral Dream</h3>
+                <p class="product-notes">Lavender • Peony • Sandalwood</p>
+                <div class="product-rating">★★★★★ (112)</div>
+                <div class="product-price">Rs. 5,100 <del>Rs. 6,000</del></div>
+                <button class="add-cart-btn" data-name="Floral Dream">Add to Cart</button>
+            </article>
+
+            <article class="product-card" data-category="men">
+                <div class="product-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1615634260167-c8cdede054de?w=500&q=80" 
+                         alt="Noir Intense dark luxury perfume" loading="lazy">
+                </div>
+                <h3>Noir Intense</h3>
+                <p class="product-notes">Black Pepper • Leather • Vetiver</p>
+                <div class="product-rating">★★★★★ (156)</div>
+                <div class="product-price">Rs. 7,500</div>
+                <button class="add-cart-btn" data-name="Noir Intense">Add to Cart</button>
+            </article>
+
+            <article class="product-card" data-category="women">
+                <span class="product-badge">BEST SELLER</span>
+                <div class="product-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1610461888750-10bfc601b874?w=500&q=80" 
+                         alt="Blossom Musk feminine perfume bottle" loading="lazy">
+                </div>
+                <h3>Blossom Musk</h3>
+                <p class="product-notes">Cherry Blossom • Musk • Cedar</p>
+                <div class="product-rating">★★★★★ (89)</div>
+                <div class="product-price">Rs. 4,200</div>
+                <button class="add-cart-btn" data-name="Blossom Musk">Add to Cart</button>
+            </article>
+
+            <article class="product-card" data-category="unisex">
+                <div class="product-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1595425970377-c9703cf48b6d?w=500&q=80" 
+                         alt="Ocean Fresh aquatic perfume" loading="lazy">
+                </div>
+                <h3>Ocean Fresh</h3>
+                <p class="product-notes">Sea Salt • Citrus • Amber</p>
+                <div class="product-rating">★★★★☆ (73)</div>
+                <div class="product-price">Rs. 3,500</div>
+                <button class="add-cart-btn" data-name="Ocean Fresh">Add to Cart</button>
+            </article>
+
+            <article class="product-card" data-category="men">
+                <span class="product-badge">NEW</span>
+                <div class="product-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad?w=500&q=80" 
+                         alt="Wood and Spice masculine perfume" loading="lazy">
+                </div>
+                <h3>Wood & Spice</h3>
+                <p class="product-notes">Sandalwood • Cinnamon • Vanilla</p>
+                <div class="product-rating">★★★★★ (102)</div>
+                <div class="product-price">Rs. 6,800</div>
+                <button class="add-cart-btn" data-name="Wood & Spice">Add to Cart</button>
+            </article>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         SERVICES SECTION
+         ========================================== -->
+    <section class="section-pad" id="services">
+        <div class="section-head reveal">
+            <span class="section-tag">What We Offer</span>
+            <h2>Our Premium Services</h2>
+            <p>More than just perfumes — we deliver an experience</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card reveal">
+                <span class="service-icon">🎁</span>
+                <h3>Gift Wrapping</h3>
+                <p>Beautiful premium gift packaging for special occasions and loved ones.</p>
+            </div>
+            <div class="service-card reveal">
+                <span class="service-icon">💧</span>
+                <h3>Sample Try-Ons</h3>
+                <p>Order sample sizes to find your perfect scent before buying full bottles.</p>
+            </div>
+            <div class="service-card reveal">
+                <span class="service-icon">🎨</span>
+                <h3>Custom Fragrance</h3>
+                <p>Create your own unique signature scent with our expert perfumers.</p>
+            </div>
+            <div class="service-card reveal">
+                <span class="service-icon">🚚</span>
+                <h3>Fast Delivery</h3>
+                <p>Same-day delivery in major cities and nationwide shipping within 3 days.</p>
+            </div>
+            <div class="service-card reveal">
+                <span class="service-icon">💬</span>
+                <h3>Fragrance Consultation</h3>
+                <p>Free expert advice to help you choose the ideal fragrance for any occasion.</p>
+            </div>
+            <div class="service-card reveal">
+                <span class="service-icon">🔄</span>
+                <h3>Easy Returns</h3>
+                <p>Not satisfied? Enjoy our 7-day hassle-free return and exchange policy.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         TESTIMONIALS
+         ========================================== -->
+    <section class="section-pad" id="testimonials">
+        <div class="section-head reveal">
+            <span class="section-tag">Testimonials</span>
+            <h2>What Our Customers Say</h2>
+            <p>Real reviews from real fragrance lovers</p>
+        </div>
+        <div class="testimonials-grid">
+            <div class="testimonial reveal">
+                <div class="stars">★★★★★</div>
+                <p>"MS Fragrance ka Rose Élégance mera favourite ban gaya hai. Fragrance bohat long-lasting hai aur packaging bhi premium lagti hai. Highly recommended!"</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">A</div>
+                    <div class="author-info"><strong>Ayesha Khan</strong><span>Lahore, Pakistan</span></div>
+                </div>
+            </div>
+            <div class="testimonial reveal">
+                <div class="stars">★★★★★</div>
+                <p>"Midnight Oud is absolutely stunning. I get compliments everywhere I go. Delivery was fast and the product is 100% original. Great service!"</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">H</div>
+                    <div class="author-info"><strong>Hassan Ali</strong><span>Karachi, Pakistan</span></div>
+                </div>
+            </div>
+            <div class="testimonial reveal">
+                <div class="stars">★★★★★</div>
+                <p>"Best perfume store online! Prices are reasonable and quality is exceptional. Customer support team is also very helpful. Will definitely order again."</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">F</div>
+                    <div class="author-info"><strong>Fatima Malik</strong><span>Islamabad, Pakistan</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         CONTACT SECTION
+         ========================================== -->
+    <section class="section-pad" id="contact">
+        <div class="section-head reveal">
+            <span class="section-tag">Get In Touch</span>
+            <h2>Contact Us</h2>
+            <p>We'd love to hear from you — questions, orders or just to say hello!</p>
+        </div>
+        <div class="contact-wrap">
+            <div class="contact-info reveal">
+                <div class="contact-card">
+                    <div class="icon">📧</div>
+                    <div>
+                        <h4>Email Us</h4>
+                        <a href="mailto:info@msfragrance.com">info@msfragrance.com</a>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <div class="icon">📞</div>
+                    <div>
+                        <h4>Call Us</h4>
+                        <a href="tel:+923001234567">+92 300 1234567</a>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <div class="icon">📍</div>
+                    <div>
+                        <h4>Visit Us</h4>
+                        <p>Shop #12, Liberty Market, Gulberg, Lahore, Pakistan</p>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <div class="icon">🕒</div>
+                    <div>
+                        <h4>Business Hours</h4>
+                        <p>Mon - Sat: 10:00 AM - 10:00 PM</p>
+                    </div>
+                </div>
+            </div>
+
+            <form class="contact-form reveal" id="contactForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required autocomplete="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="you@email.com" required autocomplete="email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="How can we help?" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+                </div>
+                <button type="submit" class="btn-primary" style="width:100%;">Send Message</button>
+                <div class="form-message" id="formMessage"></div>
+            </form>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         NEWSLETTER
+         ========================================== -->
+    <section class="section-pad">
+        <div class="newsletter reveal">
+            <h2>Get 10% Off Your First Order</h2>
+            <p>Subscribe to our newsletter for exclusive offers, new arrivals & fragrance tips</p>
+            <form class="newsletter-form" id="newsletterForm">
+                <input type="email" placeholder="Enter your email address" required aria-label="Email address" autocomplete="email">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="logo">MS FRAGRANCE</div>
+                <p>Your trusted destination for premium luxury perfumes. Discover authentic fragrances that define your elegance.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook">f</a>
+                    <a href="#" aria-label="Instagram">📷</a>
+                    <a href="#" aria-label="Twitter">𝕏</a>
+                    <a href="#" aria-label="WhatsApp">💬</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>SHOP</h4>
+                <ul>
+                    <li><a href="#products">Men's Perfume</a></li>
+                    <li><a href="#products">Women's Perfume</a></li>
+                    <li><a href="#products">Unisex</a></li>
+                    <li><a href="#products">Gift Sets</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>SUPPORT</h4>
+                <ul>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#">Shipping Info</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>COMPANY</h4>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 MS Fragrance. All Rights Reserved.<br>📧 info@msfragrance.com | 📞 +92 300 1234567</p>
+        </div>
+    </footer>
+
+    <!-- Cart Toast -->
+    <div class="toast" id="toast">
+        <span>✅</span>
+        <span id="toastMsg">Item added to cart!</span>
+    </div>
+
+    <!-- ============================================
+         JAVASCRIPT
+         ============================================ -->
+    <script>
+        /* ===== 1. MOBILE MENU TOGGLE ===== */
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+        const menuOverlay = document.getElementById('menuOverlay');
+        
+        function openMenu() {
+            navLinks.classList.add('active');
+            menuOverlay.classList.add('active');
+            document.body.classList.add('menu-open');
+            menuToggle.textContent = '✕';
+        }
+        
+        function closeMenu() {
+            navLinks.classList.remove('active');
+            menuOverlay.classList.remove('active');
+            document.body.classList.remove('menu-open');
+            menuToggle.textContent = '☰';
+        }
+        
+        menuToggle.addEventListener('click', () => {
+            if (navLinks.classList.contains('active')) {
+                closeMenu();
+            } else {
+                openMenu();
+            }
+        });
+        
+        menuOverlay.addEventListener('click', closeMenu);
+        
+        // Close menu on link click (mobile)
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', closeMenu);
+        });
+        
+        // Close menu on window resize to desktop
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 768 && navLinks.classList.contains('active')) {
+                closeMenu();
+            }
+        });
+
+        /* ===== 2. ACTIVE NAV LINK ON SCROLL ===== */
+        const sections = document.querySelectorAll('section[id], header[id]');
+        const navItems = document.querySelectorAll('.nav-link');
+        
+        function updateActiveNav() {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                if (window.scrollY >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+            navItems.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        }
+        
+        window.addEventListener('scroll', updateActiveNav);
+
+        /* ===== 3. PRODUCT FILTER ===== */
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const productCards = document.querySelectorAll('.product-card');
+        
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                
+                const filter = btn.dataset.filter;
+                
+                productCards.forEach(card => {
+                    if (filter === 'all' || card.dataset.category === filter) {
+                        card.classList.remove('hide');
+                    } else {
+                        card.classList.add('hide');
+                    }
+                });
+            });
+        });
+
+        /* ===== 4. ADD TO CART WITH TOAST ===== */
+        let cartCount = 0;
+        const cartCountEl = document.getElementById('cartCount');
+        const toast = document.getElementById('toast');
+        const toastMsg = document.getElementById('toastMsg');
+        let toastTimer;
+        
+        document.querySelectorAll('.add-cart-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                cartCount++;
+                cartCountEl.textContent = cartCount;
+                
+                const originalText = btn.textContent;
+                btn.textContent = '✓ Added!';
+                btn.classList.add('added');
+                setTimeout(() => {
+                    btn.textContent = originalText;
+                    btn.classList.remove('added');
+                }, 1500);
+                
+                toastMsg.textContent = `${btn.dataset.name} added to cart!`;
+                toast.classList.add('show');
+                clearTimeout(toastTimer);
+                toastTimer = setTimeout(() => {
+                    toast.classList.remove('show');
+                }, 2500);
+            });
+        });
+
+        /* ===== 5. CONTACT FORM VALIDATION ===== */
+        const contactForm = document.getElementById('contactForm');
+        const formMessage = document.getElementById('formMessage');
+        
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const message = document.getElementById('message').value.trim();
+            
+            if (!name || !email || !message) {
+                formMessage.textContent = '⚠️ Please fill in all required fields.';
+                formMessage.className = 'form-message error';
+                return;
+            }
+            
+            formMessage.textContent = `✅ Thank you ${name}! Your message has been sent. We'll reply to ${email} soon.`;
+            formMessage.className = 'form-message success';
+            
+            contactForm.reset();
+            
+            setTimeout(() => {
+                formMessage.className = 'form-message';
+            }, 5000);
+        });
+
+        /* ===== 6. NEWSLETTER FORM ===== */
+        const newsletterForm = document.getElementById('newsletterForm');
+        
+        newsletterForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            toastMsg.textContent = '🎉 Thank you for subscribing! Check your email for 10% off.';
+            toast.classList.add('show');
+            clearTimeout(toastTimer);
+            toastTimer = setTimeout(() => {
+                toast.classList.remove('show');
+            }, 3500);
+            newsletterForm.reset();
+        });
+
+        /* ===== 7. SCROLL REVEAL ANIMATION ===== */
+        const revealElements = document.querySelectorAll('.reveal');
+        
+        if ('IntersectionObserver' in window) {
+            const revealObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        revealObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+            
+            revealElements.forEach(el => revealObserver.observe(el));
+        } else {
+            // Fallback for older browsers
+            revealElements.forEach(el => el.classList.add('visible'));
+        }
+
+        /* ===== 8. ANIMATED STAT COUNTERS ===== */
+        const statNumbers = document.querySelectorAll('.stat-number');
+        let statsAnimated = false;
+        
+        function animateCounters() {
+            statNumbers.forEach(stat => {
+                const target = parseInt(stat.dataset.target);
+                const duration = 2000;
+                const step = target / (duration / 16);
+                let current = 0;
+                
+                const updateCounter = () => {
+                    current += step;
+                    if (current < target) {
+                        stat.textContent = target >= 1000 
+                            ? Math.floor(current).toLocaleString() + '+' 
+                            : Math.floor(current);
+                        requestAnimationFrame(updateCounter);
+                    } else {
+                        stat.textContent = target >= 1000 
+                            ? target.toLocaleString() + '+' 
+                            : target + (target === 98 ? '%' : '+');
+                    }
+                };
+                updateCounter();
+            });
+        }
+        
+        const statsSection = document.querySelector('.stats-grid');
+        if (statsSection && 'IntersectionObserver' in window) {
+            const statsObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting && !statsAnimated) {
+                        statsAnimated = true;
+                        animateCounters();
+                    }
+                });
+            }, { threshold: 0.3 });
+            statsObserver.observe(statsSection);
+        }
+
+        /* ===== 9. SMOOTH SCROLL (fallback for older browsers) ===== */
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                const target = document.querySelector(targetId);
+                if (target) {
+                    e.preventDefault();
+                    const offset = 70;
+                    const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - offset;
+                    window.scrollTo({ top: targetPosition, behavior: 'smooth' });
+                }
+            });
+        });
+
+        /* ===== 10. NAVBAR SHADOW ON SCROLL ===== */
+        const navbar = document.querySelector('nav');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.style.boxShadow = '0 4px 30px rgba(0,0,0,0.5)';
+            } else {
+                navbar.style.boxShadow = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
